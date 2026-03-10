@@ -2,7 +2,7 @@
 
 
 
-        public  class Car {
+public  class Car {
             
                 
                 private String car_ID; 
@@ -79,26 +79,7 @@
 
 
                 }
-                public static void main(String[] args) {
-            Car myCar = new Car();
-            myCar.setBrand("Toyota");
-            System.out.println(myCar.getBrand());
-      
-            try {
-        java.io.File myFile = new java.io.File("Car_Data.csv");
-        java.util.Scanner scanner = new java.util.Scanner(myFile);
 
-        // Skip the header row if your CSV has one
-        if (scanner.hasNextLine()) scanner.nextLine();
-
-        while (scanner.hasNextLine()) {
-            String data = scanner.nextLine();
-            System.out.println(data); // This prints each row from the file
         }
-        scanner.close();
-    } catch (java.io.FileNotFoundException e) {
-        System.out.println("Could not find the CSV file!");
-    }
-}
-                }
+        
             
