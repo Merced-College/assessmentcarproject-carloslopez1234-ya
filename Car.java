@@ -12,6 +12,17 @@ public  class Car {
                 private String Fuel_type;
                 private String Color;
                 private double Mileage_kmpl;
+
+                // Constructor
+                public Car(String car_ID, String Brand, String model, int year, String Fuel_type, String Color, double Mileage_kmpl) {
+                    this.car_ID = car_ID;
+                    this.Brand = Brand;
+                    this.model = model;
+                    this.year = year;
+                    this.Fuel_type = Fuel_type;
+                    this.Color = Color;
+                    this.Mileage_kmpl = Mileage_kmpl;
+                }
                 public String getCar_ID() {
                     return car_ID;
                 }
@@ -72,12 +83,7 @@ public  class Car {
                 // The to string to show the car types
                 @Override
                 public String toString() {
-                    return "Car [ID=" + car_ID + ", Brand=" + Brand + ", Model=" + model + 
-                    ", Year=" + year + ", Fuel=" + Fuel_type + ", Color=" + Color + 
-                    ", Mileage=" + Mileage_kmpl + "]" ;
-
-
-
+                    return car_ID + ", " + Brand + ", " + model + ", " + year + ", " + Fuel_type + ", " + Color + ", " + Mileage_kmpl;
                 }
 
         }
